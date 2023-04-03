@@ -22,8 +22,11 @@ ones have discovered at least 10,000 cities.
 go run main.go --aliens 10 --map testdata/example.map
 ```
 where
-    `aliens` specify the number of aliens
-    `map` file containing map of the world 
+
+    -aliens string
+        number of aliens (default "10")
+    -map string
+        path to file containing map of the world (default "testdata/example.map")
 
 ## Build
 
