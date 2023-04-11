@@ -48,8 +48,8 @@ func NewCity(name string, roads []*Road) *City {
 }
 
 // Visit indicates an alien is visiting the city.
-// It sets ok to false and returns the visiting alien encounters another alien.
-// Otherwise, sets ok to false and returns the other alien.
+// It sets ok to true and visitor to nil indicating a successful visit.
+// Otherwise, sets ok to false and returns the other alien encountered.
 func (c *City) Visit(a *Alien) (visitor *Alien, ok bool) {
 	if c.Visitor == nil {
 		c.Visitor = a
