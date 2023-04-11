@@ -23,11 +23,11 @@ test-profile:
 		-timeout=10m \
 		./... \
 		-coverprofile=coverage.out
-.PHONY: test-acc
+.PHONY: test-profile
 
 coverage:
 	@go tool cover -func=./coverage.out
-.PHONY: test-coverage
+.PHONY: coverage
 
 run:
 	@echo Running simulation using default values...
